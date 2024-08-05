@@ -28,7 +28,24 @@ if (numberOfFilms.count < 10) {
 console.log(personalMovieDB);
 
 
-<<<<<<< HEAD
+// function showFirstMessage(text) {
+//   console.log(text);
+//   let num = 20;
+// } 
+// showFirstMessage("A mne strashno");
+
+
+// function calc(a, b) {
+//   return a + b;
+// }
+// console.log(calc(2, 4))
+// function anotherNum () {
+//   let num = 50;
+//   return num;
+// }
+// let me = anotherNum();
+// console.log(me);
+// const call = (a, b) => {return a + b}
 // let num = 20;
 
 // (num === 10) ? console.log("okey") : console.log("failed!")
@@ -71,6 +88,3 @@ console.log(personalMovieDB);
 //     console.log(num);
 //     num++; 
 // } while (num < 55);
-=======
-// hbjbjb
->>>>>>> 3c4a18560e38d15469cae1d095ade584916b11a1
