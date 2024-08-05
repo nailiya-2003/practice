@@ -28,6 +28,7 @@ if (numberOfFilms.count < 10) {
 console.log(personalMovieDB);
 
 
+<<<<<<< HEAD
 // let num = 20;
 
 // (num === 10) ? console.log("okey") : console.log("failed!")
@@ -70,3 +71,6 @@ console.log(personalMovieDB);
 //     console.log(num);
 //     num++; 
 // } while (num < 55);
+=======
+// hbjbjb
+>>>>>>> 3c4a18560e38d15469cae1d095ade584916b11a1
