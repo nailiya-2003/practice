@@ -1,8 +1,12 @@
 "use strict";
-const numberOfFilms = +prompt("How much films did you look at?", "");
+let numberOfFilms;
 function start() {
-    
+    let numberOfFilms = +prompt("How much films did you look at?", "");
+    while (numberOfFilms === "" || numberOfFilms === null || isNaN(numberOfFilms)) {
+        numberOfFilms = +prompt("How much films did you look at?", "");
+    }
 }
+start();
 const personalMovieDB = {
     count: 3,
     movies: {},
@@ -31,7 +35,6 @@ if (numberOfFilms.count < 10) {
 console.log(personalMovieDB);
 
 
-<<<<<<< HEAD
 // hbjbjb
 // first: for (let i = 0; i < 3; i++) {
 //     console.log(`First level: ${i}`)
@@ -54,7 +57,6 @@ console.log(personalMovieDB);
 //     }
 //     result += '/n';
 // }
-=======
 // function showFirstMessage(text) {
 //   console.log(text);
 //   let num = 20;
@@ -115,4 +117,4 @@ console.log(personalMovieDB);
 //     console.log(num);
 //     num++; 
 // } while (num < 55);
->>>>>>> a8b83839428c32d4b01f56aefbef5dfbdf66bbcb
+
