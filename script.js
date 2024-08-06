@@ -14,7 +14,8 @@ const personalMovieDB = {
     genres: [],
     privat: false
 }
-for (let i = 0; i < 2; i++) {
+function rememberMyFilms() {
+  for (let i = 0; i < 2; i++) {
     const latestFilms = prompt("What is one of your watched film?", ""),
       evaluatedFilms = prompt("How are you evaluate that film?", "");
       if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
@@ -25,14 +26,20 @@ for (let i = 0; i < 2; i++) {
         i--;
       }
 }
-if (numberOfFilms.count < 10) {
-  console.log("vi krassavchik")
-} else if (numberOfFilms >= 10 && numberOfFilms <= 20) {
-  console.log("heheh nu ti pocti botanik")
-} else {
-  console.log("poshel")
 }
-console.log(personalMovieDB);
+rememberMyFilms();
+function detectPersonalLevel() {
+  if (numberOfFilms.count < 10) {
+    console.log("vi krassavchik")
+  } else if (numberOfFilms >= 10 && numberOfFilms <= 20) {
+    console.log("heheh nu ti pocti botanik")
+  } else {
+    console.log("poshel")
+  }
+  console.log(personalMovieDB);
+  
+}
+detectPersonalLevel();
 
 
 // hbjbjb
