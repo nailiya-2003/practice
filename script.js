@@ -1,31 +1,31 @@
-"use strict";
-const numberOfFilms = +prompt("How much films did you look at?", "");
-const personalMovieDB = {
-    count: 3,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-}
-for (let i = 0; i < 2; i++) {
-    const latestFilms = prompt("What is one of your watched film?", ""),
-      evaluatedFilms = prompt("How are you evaluate that film?", "");
-      if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
-        console.log("done");
-        personalMovieDB.movies[latestFilms] = evaluatedFilms;
-      } else {
-        console.log("error");
-        i--;
-      }
-}
-if (numberOfFilms.count < 10) {
-  console.log("vi krassavchik")
-} else if (numberOfFilms >= 10 && numberOfFilms <= 20) {
-  console.log("heheh nu ti pocti botanik")
-} else {
-  console.log("poshel")
-}
-console.log(personalMovieDB);
+// "use strict";
+// const numberOfFilms = prompt("How much films did you look at?", "");
+// const personalMovieDB = {
+//     count: 3,
+//     movies: {},
+//     actors: {},
+//     genres: [],
+//     privat: false
+// }
+// for (let i = 0; i < 2; i++) {
+//     const latestFilms = prompt("What is one of your watched film?", ""),
+//       evaluatedFilms = prompt("How are you evaluate that film?", "");
+//       if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
+//         console.log("done");
+//         personalMovieDB.movies[latestFilms] = evaluatedFilms;
+//       } else {
+//         console.log("error");
+//         i--;
+//       }
+// }
+// if (numberOfFilms.count < 10) {
+//   console.log("vi krassavchik")
+// } else if (numberOfFilms >= 10 && numberOfFilms <= 20) {
+//   console.log("heheh nu ti pocti botanik")
+// } else {
+//   console.log("poshel")
+// }
+// console.log(personalMovieDB);
 
 
 // function showFirstMessage(text) {
@@ -88,3 +88,25 @@ console.log(personalMovieDB);
 //     console.log(num);
 //     num++; 
 // } while (num < 55);
+const usdCurr = 20; 
+const discount = 0.6;
+function convert(amount, curr) {
+  return amount + curr;
+} 
+function promotion(result) {
+   console.log(result * discount)
+}
+promotion(convert(23, usdCurr));
+
+const result = function() {
+  for(let i = 0; i < 5; i++) {
+    console.log(i)
+    if (i === 3) return
+  } 
+  console.log('DONE')
+}
+result();
+function doNothing() {
+  
+}
+console.log(doNothing() === undefined);
