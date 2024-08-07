@@ -1,12 +1,7 @@
+
 // "use strict";
 // const numberOfFilms = prompt("How much films did you look at?", "");
-// const personalMovieDB = {
-//     count: 3,
-//     movies: {},
-//     actors: {},
-//     genres: [],
-//     privat: false
-// }
+
 // for (let i = 0; i < 2; i++) {
 //     const latestFilms = prompt("What is one of your watched film?", ""),
 //       evaluatedFilms = prompt("How are you evaluate that film?", "");
@@ -27,7 +22,85 @@
 // }
 // console.log(personalMovieDB);
 
+// "use strict";
+// let numberOfFilms;
+// function start() {
+//     let numberOfFilms = +prompt("How much films did you look at?", "");
+//     while (numberOfFilms === "" || numberOfFilms === null || isNaN(numberOfFilms)) {
+//         numberOfFilms = +prompt("How much films did you look at?", "");
+//     }
+// }
+// start();
 
+// function rememberMyFilms() {
+//   for (let i = 0; i < 2; i++) {
+//     const latestFilms = prompt("What is one of your watched film?", ""),
+//       evaluatedFilms = prompt("How are you evaluate that film?", "");
+//       if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
+//         console.log("done");
+//         personalMovieDB.movies[latestFilms] = evaluatedFilms;
+//       } else {
+//         console.log("error");
+//         i--;
+//       }
+// }
+// }
+// rememberMyFilms();
+// function detectPersonalLevel() {
+//   if (numberOfFilms.count < 10) {
+//     console.log("vi krassavchik")
+//   } else if (numberOfFilms >= 10 && numberOfFilms <= 20) {
+//     console.log("heheh nu ti pocti botanik")
+//   } else {
+//     console.log("poshel")
+//   }
+//   console.log(personalMovieDB);
+  
+// }
+// detectPersonalLevel();
+const personalMovieDB = {
+  count: 3,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+}
+function showMyGenres() {
+  for(let i = 1; i < 3; i++) {
+    const genre = +prompt(`vash lubimiy janr pod nomerom ${i}`)
+    personalMovieDB.genres[i - 1] = genre;
+  }
+  console.log(personalMovieDB)
+}
+showMyGenres();
+// function showMyDB(hidden) {
+//   if (!hidden) {
+//     console.log(personalMovieDB)
+//   }
+// }
+// showMyDB(personalMovieDB.privat)
+// hbjbjb
+// first: for (let i = 0; i < 3; i++) {
+//     console.log(`First level: ${i}`)
+//     for(let j = 0; j < 3; j++){
+//         console.log(`Second level: ${j}`);
+//         for(let k = 0; k < 3; k++){
+//             if (k === 2) break first;
+//             console.log(`Third level: ${k}`);
+//         }
+//     }
+   
+   
+// }
+// let length = 7;
+// let result = '';
+
+// for (let i = 1; i < length; i++) {
+//     for(let j = 0; j < i; j++) {
+//         result += '*'
+//     }
+//     result += '/n';
+// }
 // function showFirstMessage(text) {
 //   console.log(text);
 //   let num = 20;
@@ -88,6 +161,7 @@
 //     console.log(num);
 //     num++; 
 // } while (num < 55);
+
 const usdCurr = 20; 
 const discount = 0.6;
 function convert(amount, curr) {
@@ -107,6 +181,7 @@ const result = function() {
 }
 result();
 function doNothing() {
-  
+  return;
 }
-console.log(doNothing() === undefined);
+doNothing();
+
