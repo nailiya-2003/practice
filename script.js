@@ -31,28 +31,28 @@
 //     }
 // }
 // start();
-const personalMovieDB = {
-  count: 3,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false
-}
-function rememberMyFilms() {
-  for (let i = 0; i < 2; i++) {
-    const latestFilms = prompt("What is one of your watched film?", "").trim(),
-      evaluatedFilms = prompt("How are you evaluate that film?", "");
-      if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
-        console.log("done");
-        personalMovieDB.movies[latestFilms] = evaluatedFilms;
-      } else {
-        console.log("error");
-        i--;
-      }
-}
-console.log(personalMovieDB)
-}
-rememberMyFilms();
+// const personalMovieDB = {
+//   count: 3,
+//   movies: {},
+//   actors: {},
+//   genres: [],
+//   privat: false
+// }
+// function rememberMyFilms() {
+//   for (let i = 0; i < 2; i++) {
+//     const latestFilms = prompt("What is one of your watched film?", "").trim(),
+//       evaluatedFilms = prompt("How are you evaluate that film?", "");
+//       if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
+//         console.log("done");
+//         personalMovieDB.movies[latestFilms] = evaluatedFilms;
+//       } else {
+//         console.log("error");
+//         i--;
+//       }
+// }
+// console.log(personalMovieDB)
+// }
+// rememberMyFilms();
 // function detectPersonalLevel() {
 //   if (numberOfFilms.count < 10) {
 //     console.log("vi krassavchik")
@@ -215,3 +215,10 @@ rememberMyFilms();
 // }
 // doNothing();
 
+function learnJS(lang, callback) {
+  console.log(`Я учу ${lang}`)
+  callback();
+}
+learnJS("javascript", function() {
+    console.log("Я прошел этот урок уяяяяяяяяяяяяяя!!!")
+})
