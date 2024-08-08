@@ -31,21 +31,28 @@
 //     }
 // }
 // start();
-
-// function rememberMyFilms() {
-//   for (let i = 0; i < 2; i++) {
-//     const latestFilms = prompt("What is one of your watched film?", ""),
-//       evaluatedFilms = prompt("How are you evaluate that film?", "");
-//       if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
-//         console.log("done");
-//         personalMovieDB.movies[latestFilms] = evaluatedFilms;
-//       } else {
-//         console.log("error");
-//         i--;
-//       }
-// }
-// }
-// rememberMyFilms();
+const personalMovieDB = {
+  count: 3,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+}
+function rememberMyFilms() {
+  for (let i = 0; i < 2; i++) {
+    const latestFilms = prompt("What is one of your watched film?", "").trim(),
+      evaluatedFilms = prompt("How are you evaluate that film?", "");
+      if (latestFilms != "" && evaluatedFilms != "" &&  evaluatedFilms != null && latestFilms != null && latestFilms.length < 50) {
+        console.log("done");
+        personalMovieDB.movies[latestFilms] = evaluatedFilms;
+      } else {
+        console.log("error");
+        i--;
+      }
+}
+console.log(personalMovieDB)
+}
+rememberMyFilms();
 // function detectPersonalLevel() {
 //   if (numberOfFilms.count < 10) {
 //     console.log("vi krassavchik")
@@ -58,21 +65,15 @@
   
 // }
 // detectPersonalLevel();
-const personalMovieDB = {
-  count: 3,
-  movies: {},
-  actors: {},
-  genres: [],
-  privat: false
-}
-function showMyGenres() {
-  for(let i = 1; i < 3; i++) {
-    const genre = +prompt(`vash lubimiy janr pod nomerom ${i}`)
-    personalMovieDB.genres[i - 1] = genre;
-  }
-  console.log(personalMovieDB)
-}
-showMyGenres();
+
+// function showMyGenres() {
+//   for(let i = 1; i < 3; i++) {
+//     const genre = +prompt(`vash lubimiy janr pod nomerom ${i}`)
+//     personalMovieDB.genres[i - 1] = genre;
+//   }
+//   console.log(personalMovieDB)
+// }
+// showMyGenres();
 // function showMyDB(hidden) {
 //   if (!hidden) {
 //     console.log(personalMovieDB)
@@ -89,7 +90,36 @@ showMyGenres();
 //             console.log(`Third level: ${k}`);
 //         }
 //     }
-   
+// function getTimeFromMinutes(minutes) {
+//   if (typeof minutes !== "number" || minutes < 0 || !Number.isInteger(minutes)) {
+//       return "Ошибка, проверьте данные";
+//   }
+
+//   const hour = Math.floor(minutes / 60);
+//   const minutesOfRealTime = minutes - (hour * 60);
+//      let hourText;
+//      if (hour % 10 === 1 && hour % 100 !== 11) {
+//          hourText = `${hour} час`;
+//      } else if ([2, 3, 4].includes(hour % 10) && ![12, 13, 14].includes(hour % 100)) {
+//          hourText = `${hour} часа`;
+//      } else {
+//          hourText = `${hour} часов`;
+//      }
+//     let minuteText;
+//      if (minutesOfRealTime % 10 === 1 && minutesOfRealTime % 100 !== 11) {
+//          minuteText = `${minutesOfRealTime} минута`;
+//      } else if ([2, 3, 4].includes(minutesOfRealTime % 10) && ![12, 13, 14].includes(minutesOfRealTime % 100)) {
+//          minuteText = `${minutesOfRealTime} минуты`;
+//      } else {
+//          minuteText = `${minutesOfRealTime} минут`;
+//      }
+ 
+//      // Возвращаем отформатированную строку
+//      return `Это ${hourText} и ${minuteText}`;
+  
+//  }
+//  console.log(getTimeFromMinutes(0));
+ // Место для второй задачи
    
 // }
 // let length = 7;
@@ -162,26 +192,26 @@ showMyGenres();
 //     num++; 
 // } while (num < 55);
 
-const usdCurr = 20; 
-const discount = 0.6;
-function convert(amount, curr) {
-  return amount + curr;
-} 
-function promotion(result) {
-   console.log(result * discount)
-}
-promotion(convert(23, usdCurr));
+// const usdCurr = 20; 
+// const discount = 0.6;
+// function convert(amount, curr) {
+//   return amount + curr;
+// } 
+// function promotion(result) {
+//    console.log(result * discount)
+// }
+// promotion(convert(23, usdCurr));
 
-const result = function() {
-  for(let i = 0; i < 5; i++) {
-    console.log(i)
-    if (i === 3) return
-  } 
-  console.log('DONE')
-}
-result();
-function doNothing() {
-  return;
-}
-doNothing();
+// const result = function() {
+//   for(let i = 0; i < 5; i++) {
+//     console.log(i)
+//     if (i === 3) return
+//   } 
+//   console.log('DONE')
+// }
+// result();
+// function doNothing() {
+//   return;
+// }
+// doNothing();
 
