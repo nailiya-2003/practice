@@ -224,38 +224,38 @@
 // }
 // learnJS("javascript", done)
 
-const myObject = new Object()
-const options = {
-  name: 'test',
-  width: 1234,
-  height: 1235,
-  colors: {
-    border: 'black',
-    bg: 'red'
-  },
-  makeTest:{}
-}
+// const myObject = new Object()
+// const options = {
+//   name: 'test',
+//   width: 1234,
+//   height: 1235,
+//   colors: {
+//     border: 'black',
+//     bg: 'red'
+//   },
+//   makeTest:{}
+// }
 // options.makeTest()
 
 // console.log()
 // console.log(options.name)
 // delete options.name
 // console.log(options)
-let counter = 0;
-for (let key in options) {
-  if(typeof options[key] === "object") {
-    for (let i in options[key]) {
-    console.log(`the ${i} property has value of ${options[key][i]}`)
-    counter++;
-  }
-}
-  else {
-    console.log(`the ${key} property has value of ${options[key]}`)
-  }
-  counter++;
-};
-const {bg, border} = options.colors
-console.log(bg)
+// let counter = 0;
+// for (let key in options) {
+//   if(typeof options[key] === "object") {
+//     for (let i in options[key]) {
+//     console.log(`the ${i} property has value of ${options[key][i]}`)
+//     counter++;
+//   }
+// }
+//   else {
+//     console.log(`the ${key} property has value of ${options[key]}`)
+//   }
+//   counter++;
+// };
+// const {bg, border} = options.colors
+// console.log(bg)
 // console.log(Object.keys(options))
 // for(let key in options) {
 //   let server = [prompt("do you want to check the browser?", ""), prompt("do you want to check the instagram?", ""), prompt("do you want to check the telegram?", ""), prompt("do you want to check the reals?", ""), prompt("do you want to check the skyscanner?", "")]
@@ -265,3 +265,29 @@ console.log(bg)
 //   }
 //   testMe()
 // };
+// let arr = [1, 2, 3, 4]
+// arr.push(2)
+// arr.pop()
+// console.log(arr);
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])
+// } 
+// for (let value of arr) {
+//   console.log(value);
+// }
+// arr.forEach(function(item, i, arr) {
+//   console.log(`${item} prinadlejit ${i} po nomeru ${arr}`);
+// })
+// let array = prompt('', '');
+// let products = array.split(', ');
+// // console.log(products.join("; "));
+// console.log(products.sort())
+
+const obj = {
+    a: 5,
+    b: 6
+}
+const copy = obj;
+copy.a = 10;
+console.log(obj);
+console.log(copy);
