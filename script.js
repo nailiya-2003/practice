@@ -224,38 +224,38 @@
 // }
 // learnJS("javascript", done)
 
-const myObject = new Object()
-const options = {
-  name: 'test',
-  width: 1234,
-  height: 1235,
-  colors: {
-    border: 'black',
-    bg: 'red'
-  },
-  makeTest:{}
-}
-// options.makeTest()
+// const myObject = new Object()
+// const options = {
+//   name: 'test',
+//   width: 1234,
+//   height: 1235,
+//   colors: {
+//     border: 'black',
+//     bg: 'red'
+//   },
+//   makeTest:{}
+// }
+// // options.makeTest()
 
-// console.log()
-// console.log(options.name)
-// delete options.name
-// console.log(options)
-let counter = 0;
-for (let key in options) {
-  if(typeof options[key] === "object") {
-    for (let i in options[key]) {
-    console.log(`the ${i} property has value of ${options[key][i]}`)
-    counter++;
-  }
-}
-  else {
-    console.log(`the ${key} property has value of ${options[key]}`)
-  }
-  counter++;
-};
-const {bg, border} = options.colors
-console.log(bg)
+// // console.log()
+// // console.log(options.name)
+// // delete options.name
+// // console.log(options)
+// let counter = 0;
+// for (let key in options) {
+//   if(typeof options[key] === "object") {
+//     for (let i in options[key]) {
+//     console.log(`the ${i} property has value of ${options[key][i]}`)
+//     counter++;
+//   }
+// }
+//   else {
+//     console.log(`the ${key} property has value of ${options[key]}`)
+//   }
+//   counter++;
+// };
+// const {bg, border} = options.colors
+// console.log(bg)
 // console.log(Object.keys(options))
 // for(let key in options) {
 //   let server = [prompt("do you want to check the browser?", ""), prompt("do you want to check the instagram?", ""), prompt("do you want to check the telegram?", ""), prompt("do you want to check the reals?", ""), prompt("do you want to check the skyscanner?", "")]
@@ -265,3 +265,56 @@ console.log(bg)
 //   }
 //   testMe()
 // };
+// const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//       languages: ['ru', 'eng'],
+//       programmingLangs: {
+//           js: '20%',
+//           php: '10%'
+//       },
+//       exp: '1 month'
+//   }
+// };
+
+// function showExperience(plan) {
+//     const {exp,languages, programmingLangs} = plan.skills
+//     return exp;
+//   }
+
+// showExperience(personalPlanPeter)
+
+// function showProgrammingLangs(plan) {
+//   const {exp,languages,programmingLangs} = plan.skills
+//   const {js, php} = programmingLangs;
+//   return js, php
+//  }
+//  console.log(showProgrammingLangs(personalPlanPeter))
+
+ const personalPlanPeter = {
+  name: "Peter",
+  age: "29",
+  skills: {
+      languages: ['ru', 'eng'],
+      programmingLangs: {
+          js: '20%',
+          php: '10%'
+      },
+      exp: '1 month'
+  }
+};
+
+function showExperience(plan) {
+const {exp,languages,programmingLangs} = plan.skills
+return exp;
+}
+showExperience(personalPlanPeter)
+
+function showProgrammingLangs(plan) {
+const {exp,languages,programmingLangs} = plan.skills
+programmingLangs.ruby = "30%"
+const {js, php, ruby} = programmingLangs;
+return `Язык js изучен на ${js}\nЯзык php изучен на ${php}\nЯзык ruby изучен на ${ruby}`
+}
+showProgrammingLangs(personalPlanPeter)
