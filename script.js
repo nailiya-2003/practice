@@ -235,21 +235,20 @@
 //   },
 //   makeTest:{}
 // }
-<<<<<<< HEAD
+
 // // options.makeTest()
 
 // // console.log()
 // // console.log(options.name)
 // // delete options.name
 // // console.log(options)
-=======
+
 // options.makeTest()
 
 // console.log()
 // console.log(options.name)
 // delete options.name
 // console.log(options)
->>>>>>> 6dfedd9c10183068844fb9c82a9342d9cdbd3d60
 // let counter = 0;
 // for (let key in options) {
 //   if(typeof options[key] === "object") {
@@ -274,7 +273,6 @@
 //   }
 //   testMe()
 // };
-<<<<<<< HEAD
 // const personalPlanPeter = {
 //   name: "Peter",
 //   age: "29",
@@ -302,33 +300,34 @@
 //  }
 //  console.log(showProgrammingLangs(personalPlanPeter))
 
- const personalPlanPeter = {
-  name: "Peter",
-  age: "29",
-  skills: {
-      languages: ['ru', 'eng'],
-      programmingLangs: {
-          js: '20%',
-          php: '10%'
-      },
-      exp: '1 month'
-  }
-};
+//  const personalPlanPeter = {
+//   name: "Peter",
+//   age: "29",
+//   skills: {
+//       languages: ['ru', 'eng'],
+//       programmingLangs: {
+//           js: '20%',
+//           php: '10%'
+//       },
+//       exp: '1 month'
+//   }
+// };
+// console.log(Object.keys(personalPlanPeter).length)
 
-function showExperience(plan) {
-const {exp,languages,programmingLangs} = plan.skills
-return exp;
-}
-showExperience(personalPlanPeter)
+// function showExperience(plan) {
+// const {exp,languages,programmingLangs} = plan.skills
+// return exp;
+// }
+// showExperience(personalPlanPeter)
 
-function showProgrammingLangs(plan) {
-const {exp,languages,programmingLangs} = plan.skills
-programmingLangs.ruby = "30%"
-const {js, php, ruby} = programmingLangs;
-return `Язык js изучен на ${js}\nЯзык php изучен на ${php}\nЯзык ruby изучен на ${ruby}`
-}
-showProgrammingLangs(personalPlanPeter)
-=======
+// function showProgrammingLangs(plan) {
+// const {exp,languages,programmingLangs} = plan.skills
+// programmingLangs.ruby = "30%"
+// const {js, php, ruby} = programmingLangs;
+// return `Язык js изучен на ${js}\nЯзык php изучен на ${php}\nЯзык ruby изучен на ${ruby}`
+// }
+// showProgrammingLangs(personalPlanPeter)
+
 // let arr = [1, 2, 3, 4]
 // arr.push(2)
 // arr.pop()
@@ -347,12 +346,23 @@ showProgrammingLangs(personalPlanPeter)
 // // console.log(products.join("; "));
 // console.log(products.sort())
 
-const obj = {
-    a: 5,
-    b: 6
-}
-const copy = obj;
-copy.a = 10;
-console.log(obj);
-console.log(copy);
->>>>>>> 6dfedd9c10183068844fb9c82a9342d9cdbd3d60
+// const obj = {
+//     a: 5,
+//     b: 6
+// }
+// const copy = obj;
+// copy.a = 10;
+// console.log(obj);
+// console.log(copy);
+let arr = [1, 2, 13, 45, 3]
+console.log(arr.sort())
+// for (let value of arr) {
+//     console.log(value)
+// }
+arr.forEach(function(item, i, arr) {
+    console.log(`vnutri ${arr} soderjitsa ${item} pod znakom ${i}`);
+})
+const str = prompt("", "");
+const products = str.split(", ");
+console.log(products.join("; "));
+
