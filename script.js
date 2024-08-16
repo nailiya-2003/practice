@@ -1,4 +1,3 @@
-
 "use strict";
 // const numberOfFilms = prompt("How much films did you look at?", "");
 
@@ -354,15 +353,87 @@
 // copy.a = 10;
 // console.log(obj);
 // console.log(copy);
-let arr = [1, 2, 13, 45, 3]
-console.log(arr.sort())
+// let arr = [1, 2, 13, 45, 3]
+// console.log(arr.sort())
 // for (let value of arr) {
 //     console.log(value)
 // }
-arr.forEach(function(item, i, arr) {
-    console.log(`vnutri ${arr} soderjitsa ${item} pod znakom ${i}`);
-})
-const str = prompt("", "");
-const products = str.split(", ");
-console.log(products.join("; "));
+// arr.forEach(function(item, i, arr) {
+//     console.log(`vnutri ${arr} soderjitsa ${item} pod znakom ${i}`);
+// })
+// const str = prompt("", "");
+// const products = str.split(", ");
+// console.log(products.join("; "));
+// const obj = {
+//     a: 12,
+//     b: 23
+// }
+// const a = obj;
+// obj.a = 23;
+// console.log(obj)
+// console.log(a)
 
+// function copy(mainObj) {
+//     let obj = {};
+//     for (let key in mainObj) {
+//         obj[key] = mainObj[key];
+//     }
+//     return obj;
+
+let numbers = {
+    a: 10,
+    b: 34,
+    c: {
+        d: 10,
+        g: 45
+    }
+}
+// const newNumbers = copy(numbers)
+// newNumbers.a = 23;
+// console.log(newNumbers);
+// console.log(numbers)
+// const add = ['cfvv', 'jhh', 'bhb']
+// const newObj = add.slice();
+// newObj[1] = 'jjbjbj';
+// console.log(add)
+// console.log(newObj)
+// const d = Object.assign({}, add);
+// d.d = 34;
+// console.log(d);
+// const video = ['youtube', 'rutube', 'ntv'],
+// music = ['davinci', 'pedro', 'reels'],
+// blogs = ['ania kubov', 'kris', 'tima'], me = [...video, ...music, ...blogs]
+// console.log(me)
+// function log(a, b, c) {
+//     console.log(a);
+//     console.log(b);
+//     console.log(c);
+// }
+// const num = ['bara', 'bere', 'bare']
+// log(...num);
+// const q = {...numbers};
+// q.a = 45;
+// console.log(q);
+// const family = ['Peter', 'Ann', 'Alex', 'Linda'];
+
+// function showFamily(arr) {
+//     if (arr = []) {
+//         return 'Семья пуста';
+//     }
+//         return `Семья состоит из: ${arr.join(' ')}`
+    
+// }
+// showFamily(family);
+// const baseCurrencies = ['USD', 'EUR'];
+// const additionalCurrencies = ['UAH', 'RUB', 'CNY'];
+
+// function availableCurr(arr, missingCurr) {
+//    if (arr.length === 0) {
+//        return 'Нет доступных валют';
+//    }
+//    let vixod = arr.filter(elements => {
+//        elements !== missingCurr;
+//    }).join('/n');
+//    return `Доступные валюты:/n`+ vixod;
+// }
+// availableCurr(baseCurrencies, additionalCurrencies)
